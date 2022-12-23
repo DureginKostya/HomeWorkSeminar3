@@ -12,7 +12,7 @@ void TableValue(int UserNumber)
     if (UserNumber > 1)
     {
         Console.WriteLine("---------------------------------");
-        Console.WriteLine($"Числа от 1 до {UserNumber} || Числа в кубе ");
+        Console.WriteLine($"Числа от 1 до {UserNumber} || Число в кубе ");
         Console.WriteLine("---------------------------------");
         for (int i = 1; i <= UserNumber; i++)
         {
@@ -26,6 +26,5 @@ void TableValue(int UserNumber)
         Console.WriteLine("Введено недопустимое число, N должно быть больше единицы");
     }
 }
-
 int Number = GetUserValue("Введите число: ");
 TableValue(Number);
