@@ -7,7 +7,7 @@ int GetUserValue(string Message)
     int Result = int.Parse(Console.ReadLine()!);    
     return Result;
 }
-string TestingNumber(int UserNumber)
+string CheckingNumber(int UserNumber)
 {
     string Answer = "Число меньше 11 не может быть палиндромом";
     if (UserNumber > 10)
@@ -19,13 +19,13 @@ string TestingNumber(int UserNumber)
 }
 int GetCountTen(int Number)
 {
-    int count = 0;
+    int Count = 0;
     while (Number > 0)
     {
         Number = Number / 10;
-        count++;
+        Count++;
     }  
-    return count;
+    return Count;
 }
 string DeterminationNumberPalindrome(int NumberPalindrome, int Order)
 {    
@@ -51,5 +51,5 @@ string DeterminationNumberPalindrome(int NumberPalindrome, int Order)
     return Decision;
 }
 int EnterNumber = GetUserValue("Введите число: ");
-string Palindrome = TestingNumber(EnterNumber);
+string Palindrome = CheckingNumber(EnterNumber);
 Console.WriteLine(Palindrome);
